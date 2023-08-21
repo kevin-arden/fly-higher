@@ -14,17 +14,18 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        blue: '#2395FF',
+        black: '#414141',
+        gray: '#979797',
+        white: '#FFFFFF',
+        lightgray: '#DDDDDD'
+      }
     },
     fontFamily: {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans]
     },
-    colors: {
-      blue: '#2395FF',
-      black: '#414141',
-      gray: '#979797',
-      white: '#FFFFFF',
-      lightgray: '#DDDDDD'
-    }
+    
   },
   plugins: [],
 }

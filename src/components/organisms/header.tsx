@@ -3,6 +3,7 @@ import icPlane from "@public/illustration.svg";
 import Image from "next/image";
 import Button from "../atoms/Button";
 import TransparentButton from "../atoms/TransparentButton";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -16,7 +17,9 @@ function Header() {
         <TransparentButton>Find Ticket</TransparentButton>
         <TransparentButton>My Booking</TransparentButton>
       </div>
-      <Button>Sign Up</Button>
+      <Link href="/auth/login" className="py-4 px-11 text-white bg-blue rounded-xl">
+        <p>Sign Up</p>
+      </Link>
     </div>
   );
 }

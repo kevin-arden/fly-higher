@@ -15,7 +15,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { HiddenSelect } from "@react-aria/select";
 import Tokyo from "@public/assets/images/tokyo.svg";
 import Barcelona from "@public/assets/images/barcelona.svg";
-
+import Footer from "@/components/organisms/footer";
 
 export default function Home() {
   const [flightDate, setFlightDate] = useState<Date | null>();
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </div>
       {/* part 3 */}
-      <div className="m-20 px-32 py-16 items-center  bg-blue">
+      <div className="m-20 px-32 py-16 items-center  bg-blue rounded-3xl">
         <div className="text-center text-white flex flex-col justify-center">
           <p className="font-thin">Top 10 destinations</p>
           <p className="font-semibold text-lg">TOP 10</p>
@@ -194,8 +194,21 @@ export default function Home() {
             </div>
             <p className="text-white">BARCELONA</p>
           </div>
+          <div className="text-center">
+            <div className="relative inline-block  rounded-full">
+              <div className="relative border-4 border-white rounded-full">
+                <Image
+                  src={Barcelona}
+                  className="w-32 h-32  border-4 rounded-full"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <p className="text-white">BARCELONA</p>
+          </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
