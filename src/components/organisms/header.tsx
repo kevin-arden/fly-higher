@@ -14,10 +14,15 @@ function Header() {
       </div>
       <div>
         <TransparentButton>Search</TransparentButton>
-        <TransparentButton>Find Ticket</TransparentButton>
+        <Link href="/find_ticket">
+          <TransparentButton>Find Ticket</TransparentButton>
+        </Link>
         <TransparentButton>My Booking</TransparentButton>
       </div>
-      <Link href="/auth/login" className="py-4 px-11 text-white bg-blue rounded-xl">
+      <Link
+        href="/auth/login"
+        className="py-4 px-11 text-white bg-blue rounded-xl"
+      >
         <p>Sign Up</p>
       </Link>
     </div>
