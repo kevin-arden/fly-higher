@@ -8,10 +8,10 @@ import Link from "next/link";
 function Header() {
   return (
     <div className="py-10 px-20 flex flex-row justify-between">
-      <div className="flex flex-row gap-2 items-center">
+      <Link href="/" className="flex flex-row gap-2 items-center">
         <Image src={icPlane} alt="main icon" />
         <h1 className="text-xl font-semibold">Fly Higher</h1>
-      </div>
+      </Link>
       <div>
         <TransparentButton>Search</TransparentButton>
         <Link href="/find_ticket">
@@ -20,7 +20,7 @@ function Header() {
         <TransparentButton>My Booking</TransparentButton>
       </div>
       <Link
-        href="/auth/login"
+        href="/auth/register"
         className="py-4 px-11 text-white bg-blue rounded-xl"
       >
         <p>Sign Up</p>

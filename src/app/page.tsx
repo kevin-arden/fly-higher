@@ -16,6 +16,7 @@ import { HiddenSelect } from "@react-aria/select";
 import Tokyo from "@public/assets/images/tokyo.svg";
 import Barcelona from "@public/assets/images/barcelona.svg";
 import Footer from "@/components/organisms/footer";
+import SelectDestionation from "@/components/molecules/SelectDestionation";
 
 export default function Home() {
   const [flightDate, setFlightDate] = useState<Date | null>();
@@ -64,19 +65,7 @@ export default function Home() {
               <Image src={IcRightLg} alt="arrow right icon" />
             </button>
             {/* destination */}
-            <div className="flex flex-row justify-between drop-shadow-lg p-5 bg-white rounded-2xl">
-              <div>
-                <p className="text-xs">from</p>
-                <p className="text-xl font-semibold">Medan</p>
-                <p className="text-xs">Indonesia</p>
-              </div>
-              <Image src={IcArrAround} alt="arrow around" />
-              <div>
-                <p className="text-xs">from</p>
-                <p className="text-xl font-semibold">Tokyo</p>
-                <p className="text-xs">Indonesia</p>
-              </div>
-            </div>
+            <SelectDestionation />
             {/* select button */}
             <div className="gap-x-2 flex flex-row">
               <Button>One Way</Button>
@@ -176,7 +165,7 @@ export default function Home() {
         </div>
       </div>
       {/* part 3 */}
-      <div className="m-20 px-32 py-16 items-center  bg-blue rounded-3xl">
+      <div className="mx-20 my-10 px-32 py-16 items-center  bg-blue rounded-3xl">
         <div className="text-center text-white flex flex-col justify-center">
           <p className="font-thin">Top 10 destinations</p>
           <p className="font-semibold text-lg">TOP 10</p>

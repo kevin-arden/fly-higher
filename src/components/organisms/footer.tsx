@@ -10,7 +10,7 @@ import icYoutube from "@public/assets/logo/youtube.svg";
 
 export default function Footer() {
   return (
-    <div className="px-32 mb-16">
+    <div className="px-32 py-16">
       <div className="flex flex-row justify-between mb-6">
         <div className="w-1/4">
           <div className="flex flex-row gap-2 items-center mb-4">
